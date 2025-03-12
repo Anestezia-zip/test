@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bonus</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__container">
+        <!-- Логотип -->
+        <a href="./index.html" class="navbar__logo">
+          <span class="navbar__logo-text">LOGO</span>
+          <img src="assets/logo.png" alt="Logo" class="navbar__logo-img" />
+        </a>
+
+        <!-- Навигационные ссылки -->
+        <nav class="navbar__nav">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="./bonus.html" class="navbar__link">
+                <img
+                  src="assets/Gift.svg"
+                  alt="Gift Icon"
+                  class="navbar__icon"
+                />
+                <span>BONUSES</span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="./app.html" class="navbar__link">
+                <img
+                  src="assets/iPhone.svg"
+                  alt="iPhone Icon"
+                  class="navbar__icon"
+                />
+                <span>APP</span>
+              </a>
+            </li>
+            <li class="navbar__item navbar__item--live">
+              <a href="#" class="navbar__link">LIVE</a>
+            </li>
+            <li class="navbar__item navbar__item--sports">
+              <a href="#" class="navbar__link">SPORTS</a>
+            </li>
+            <li class="navbar__item navbar__item--more">
+              <a href="#" class="navbar__link">MORE</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="navbar__user-options">
+          <!-- Dropdown меню -->
+          <div class="navbar__dropdown">
+            <button class="navbar__dropdown-btn">
+              <img src="assets/Flag.svg" alt="Flag icon" class="navbar__icon" />
+              <span>AT</span>
+              <img
+                class="navbar__arrow"
+                src="assets/Arrow-down.svg"
+                alt="Arrow down icon"
+              />
+            </button>
+            <div class="navbar__dropdown-menu">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+            </div>
+          </div>
+
+          <!-- Кнопки авторизации -->
+          <div class="navbar__auth">
+            <a href="#" class="navbar__auth-link navbar__auth-link--signup"
+              >SIGN UP</a
+            >
+            <a href="#" class="navbar__auth-link navbar__auth-link--login"
+              >LOG IN</a
+            >
+          </div>
+        </div>
+
+        <!-- Бургер-меню для мобильных устройств -->
+        <div class="navbar__burger" id="burger-icon">
+          <span class="burger-icon bar bar1"></span>
+          <span class="burger-icon bar bar2"></span>
+          <span class="burger-icon bar bar3"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+        Bonus page
+    </main>
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
