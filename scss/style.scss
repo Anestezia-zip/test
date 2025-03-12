@@ -187,7 +187,117 @@ body {
 
 }
 
+.main {
 
+    &__container {
+        margin: 20px auto;
+        max-width: 1240px;
+        @include flex-container($align: flex-start, $gap: 20px);
+    }
+}
+
+.app {
+    font-size: 16px;
+    background-color: $primary-white;
+    padding: 25px 20px;
+    max-width: 925px;
+    display: flex;
+    gap: 40px;
+    border-radius: $border-radius-6;
+
+    &__text {
+        font-weight: normal;
+        font-size: 16px;
+        max-width: 666px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background-color: $color-deep-blue;
+        border-radius: $border-radius-16;
+        padding: 12px;
+        height: fit-content;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        & span {
+            font-weight: 600;
+        }
+    }
+}
+
+.sidebar {
+    max-width: 295px;
+    background-color: $color-dark-blue;
+    border-top-left-radius: $border-radius-6;
+    border-top-right-radius: $border-radius-6;
+
+    &__header {
+        padding: 20px 24px;
+
+        &-content {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background-color: $primary-orange;
+            padding: 4px;
+            border-radius: $border-radius-60;
+            cursor: pointer;
+        }
+    }
+
+    &__title--live-events {
+        font-weight: 400;
+        font-size: 16px;
+        color: $secondary-white;
+        text-transform: uppercase;
+    }
+
+    &__icon--play {
+        padding-right: 8px;
+    }
+
+    &__list {
+        width: 100%;
+        background-color: $primary-white;
+        padding-top: 16px;
+    }
+
+    &__item {
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $primary-gray;
+        margin-bottom: 4px;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            background-color: $color-dark-blue;
+            cursor: pointer;
+        }
+    }
+}
+
+.sidebar--casino {
+    margin-top: 20px;
+}
+
+.sidebar__title--casino {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: $secondary-white;
+}
 
 
 @import 'media';

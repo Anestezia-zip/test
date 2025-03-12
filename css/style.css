@@ -192,6 +192,107 @@ body {
   transform: rotate(-45deg) translate(0px, -1px);
 }
 
+.main__container {
+  margin: 20px auto;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.app {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 25px 20px;
+  max-width: 925px;
+  display: flex;
+  gap: 40px;
+  border-radius: 6px;
+}
+.app__text {
+  font-weight: normal;
+  font-size: 16px;
+  max-width: 666px;
+}
+.app__btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #1A3769;
+  border-radius: 16px;
+  padding: 12px;
+  height: fit-content;
+}
+.app__btn-icon {
+  width: 24px;
+  height: 24px;
+}
+.app__btn span {
+  font-weight: 600;
+}
+
+.sidebar {
+  max-width: 295px;
+  background-color: #192A32;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.sidebar__header {
+  padding: 20px 24px;
+}
+.sidebar__header-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background-color: #EC622B;
+  padding: 4px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.sidebar__title--live-events {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+}
+.sidebar__icon--play {
+  padding-right: 8px;
+}
+.sidebar__list {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 16px;
+}
+.sidebar__item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7C7C7C;
+  margin-bottom: 4px;
+}
+.sidebar__item-icon {
+  width: 24px;
+  height: 24px;
+}
+.sidebar__item:hover {
+  background-color: #192A32;
+  cursor: pointer;
+}
+
+.sidebar--casino {
+  margin-top: 20px;
+}
+
+.sidebar__title--casino {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fcfcfc;
+}
+
 @media (max-width: 1312px) {
   .navbar__container {
     gap: 8px;
