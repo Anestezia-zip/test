@@ -46,15 +46,17 @@ document.querySelectorAll('.faq__question').forEach(button => {
 });
 
 // Открываем/закрываем sidebar items
-sidebarArrow.addEventListener('click', (e) => {
-  sidebarItems.forEach(item => {
-    item.classList.toggle('active');
+if (sidebarArrow && sidebarItems.length) {
+  sidebarArrow.addEventListener('click', (e) => {
+    sidebarItems.forEach(item => {
+      item.classList.toggle('active');
+    });
   });
-});
+}
 
 // Удаляем класс 'active' при клике вне sidebar
 document.addEventListener('click', (e) => {
-  // Проверяем, что клик был не по элементу sidebar или по самой стрелке
+  // Проверяем, что клик был не по элементу sidebar
   if (!e.target.closest('.sidebar__header')) {
     sidebarItems.forEach(item => {
       item.classList.remove('active');

@@ -1,8 +1,6 @@
 @import 'variables';
 @import 'mixins';
-@import 'home';
-@import 'bonus';
-@import 'app';
+
 
 * {
     margin: 0;
@@ -994,4 +992,6 @@ body {
     }
 }
 
+@import 'bonus';
+@import 'app';
 @import 'media';
